@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 5 Boilerplate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="main-page">
+    <div class="top">
+      <!-- 1 -->
+      <h1 id="title" class="red bold">Best Döner in Osnabrück Survey</h1>
+      <!-- 2 -->
+      <p id="description" class="red bold">Thank you for taking the time to let us know, who makes the best Döner in
+        Osnabrooklyn</p>
+    </div>
+
+    <!-- 3 -->
+    <form id="survey-form">
+      <fieldset>
+        <!-- 4 -->
+        <label class="bold red" for="name-label" id="name-label">Name: <input class="block" type="text" id="name"
+            name="name-label" placeholder="Enter your name" required></label>
+        <!-- 5 -->
+        <label class="bold red" for="email-label" id="email-label">Email: <input class="block" type="email" id="email"
+            name="email-label" placeholder="Enter your Email" required></label>
+      </fieldset>
+      <!-- 6   ✅Submit button✅ -->
+      <!-- 7 ✅-->
+      <!-- 8 ✅-->
+      <!-- 9 ✅-->
+      <!-- 10 ✅-->
+      <!-- 11 ✅-->
+      <fieldset>
+        <label class="bold green" for="number-label" id="number-label">On average, how many times a month do you eat Döner?<input class="block count" type="number" id="number" name="number-label" placeholder="Döner count" min="0" max="99" required>
+        </label>
+        <!-- 12 -->
+        <label class="bold red" for="best-restaurant">Who makes the best Döner in Osnabrück?
+          <select id="dropdown" class="block" name="best-restaurant" required>
+            <option value="">Please select</option>
+
+            <!-- Available Options -->
+            <option value="Aroma">Aroma</option>
+            <option value="Beykebab">Beykebab</option>
+            <option value="Ali Baba">Ali Baba</option>
+            <option value="M&C Döner">M&C Döner</option>
+            <option value="Kebab Station">Kebab Station</option>
+          </select>
+        </label>
+        <!-- 13 -->
+        <p class="bold green">What is your go-to meat? (required)</p>
+        <label for="chicken"><input id="chicken" type="radio" name="meat" value="chicken" checked>Chicken</label>
+        <label for="lamb"><input id="lamb" type="radio" name="meat" value="lamb">Lamb</label>
+        <label for="steak"><input id="steak" type="radio" name="meat" value="steak">Steak</label>
+        <label for="falafel"><input id="falafel" type="radio" name="meat" value="falafel">Falafel (Vegan)</label>
+        <!-- 14 not finished, I need to edit the element atributes -->
+        <div class="sauce">
+          <p class="bold red">Which one is your favourite sauce? (You can choose multiple answers)</p>
+          <div class="sauce-options">
+            <label for="tzaziki"><input type="checkbox" id="tzaziki" name="sauce" value="tzaziki">Tzaziki</label>
+          <label for="spicy"><input type="checkbox" id="spicy" name="sauce" value="spicy">Spicy sauce</label>
+          <label for="cocktail"><input type="checkbox" id="cocktail" name="sauce" value="cocktail">Cocktail
+            sauce</label>
+          </div>
+        </div>
+        <!-- 15 -->
+        <label class="bold green" for="suggestions">Any meat/sauce suggestions to improve the survey?
+          <textarea id="suggestions" name="suggestions" rows="3" cols="35"
+            placeholder="I like garlic sauce..."></textarea>
+        </label>
+      </fieldset>
+
+
+
+      <!-- 16 -->
+      <input type="submit" id="submit" class="bold" value="Submit">
+    </form>
+  </div>
+
+
+
+
+</body>
+
+</html>
